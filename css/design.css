@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 0px;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+
+/* Gallery */
+#gallery {
+    background-color: #4C6E90;
+    padding: 40px 0px;
+}
+#gallery .row {
+    justify-content: space-between;
+}
+#gallery figure {
+    margin: 0px 0px 10px;
+}
+#gallery img {
+    width: 100%;
+}
+#gallery .col {
+    margin: 0px 10px;
+}
+#gallery h2 {
+    color: #fff;
+    font-size: 30px;
+}
+#gallery .m-left {
+    margin-left: 13px;
+}
+#gallery .image {
+    position: relative;
+    overflow: hidden;
+}
+#gallery .caption {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    left: 0px;
+    top: 0px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    transform: translate(0%, 100%);
+    transition: 0.5s;
+}
+#gallery .image:hover .caption {
+    transform: translate(0%,0%);
+}
+#gallery .caption span {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    left: 0px;
+}
